@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Movies</string>
+
+    <string name="action_add_person">Add person</string>
+    <string name="action_accept_entry">Accept data</string>
+    <string name="delete_movie">DELETE</string>
+
+    <string name="avatar_desc">Personal avatar</string>
+    <string name="age_text">Wiek: </string>
+    <string name="poster_description">Movie poster</string>
+</resources>
