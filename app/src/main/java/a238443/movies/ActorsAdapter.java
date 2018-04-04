@@ -74,7 +74,7 @@ public class ActorsAdapter extends BaseAdapter {
 
         holder.nameText.setText(tempData);
 
-        tempData = currentView.getResources().getString(R.string.age_text) + currentActor.getAge();
+        tempData = currentView.getResources().getString(R.string.age_text) + " " + currentActor.getAge();
         holder.ageText.setText(tempData);
 
         holder.avatar.setImageResource(currentActor.getPhotoID());

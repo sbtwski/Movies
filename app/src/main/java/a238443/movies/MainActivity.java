@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity implements RecyclerItemTouch
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        v_addListeners();
+        addListeners();
+
         recyclerView = findViewById(R.id.main_recyclerView);
         mainAdapter = new RecyclerAdapter(listener);
         recyclerView.setAdapter(mainAdapter);
@@ -35,21 +36,10 @@ public class MainActivity extends AppCompatActivity implements RecyclerItemTouch
         Toolbar mainToolbar = findViewById(R.id.main_toolbar);
         setSupportActionBar(mainToolbar);
 
-        mainAdapter.addItem(new Movie("Some title","Some category",R.drawable.ic_delete));
-        mainAdapter.addItem(new Movie("Some title","Some category",R.drawable.ic_delete));
-        mainAdapter.addItem(new Movie("Some title","Some category",R.drawable.ic_delete));
-        mainAdapter.addItem(new Movie("Some title","Some category",R.drawable.ic_delete));
-        mainAdapter.addItem(new Movie("Some title","Some category",R.drawable.ic_delete));
-        mainAdapter.addItem(new Movie("Some title","Some category",R.drawable.ic_delete));
-        mainAdapter.addItem(new Movie("Some title","Some category",R.drawable.ic_delete));
-        mainAdapter.addItem(new Movie("Some title","Some category",R.drawable.ic_delete));
-        mainAdapter.addItem(new Movie("Some title","Some category",R.drawable.ic_delete));
-        mainAdapter.addItem(new Movie("Some title","Some category",R.drawable.ic_delete));
-        mainAdapter.addItem(new Movie("Some title","Some category",R.drawable.ic_delete));
-
+        dataBuilding();
     }
 
-    private void v_addListeners() {
+    private void addListeners() {
         listener = new RecyclerViewClickListener() {
             @Override
             public void onClick(View view, int position) {
@@ -78,5 +68,25 @@ public class MainActivity extends AppCompatActivity implements RecyclerItemTouch
         if (viewHolder instanceof RecyclerAdapter.MovieHolder) {
             mainAdapter.removeItem(viewHolder.getAdapterPosition());
         }
+    }
+
+    private void dataBuilding() {
+        ArrayList<Integer> photosID = new ArrayList<>();
+        ArrayList<Actor> actorsInfo = new ArrayList<>();
+
+        // INTERSTELLAR
+
+        photosID.add(R.drawable.interstellar_photo_1);
+        photosID.add(R.drawable.interstellar_photo_2);
+        photosID.add(R.drawable.interstellar_photo_3);
+        photosID.add(R.drawable.interstellar_photo_4);
+        photosID.add(R.drawable.interstellar_photo_5);
+        photosID.add(R.drawable.interstellar_photo_6);
+        photosID.add(R.drawable.interstellar_photo_7);
+        photosID.add(R.drawable.interstellar_photo_8);
+
+        actorsInfo.add(new Actor("Matthew","McConaughey",48,R.drawable.mcconaughey));
+
+        mainAdapter.addItem(new Movie("Interstellar","Science-fiction",R.drawable.interstellar_poster,photosID,actorsInfo));
     }
 }

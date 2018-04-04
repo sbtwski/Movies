@@ -35,8 +35,8 @@ public class MovieActivity extends AppCompatActivity{
         categoryView = findViewById(R.id.category_view);
         posterView = findViewById(R.id.poster_view);
 
-        v_displayValues();
-        v_setupTabs();
+        displayValues();
+        setupTabs();
     }
 
     @Override
@@ -52,7 +52,7 @@ public class MovieActivity extends AppCompatActivity{
         savedInstanceState.putSerializable("movie",toDisplay);
     }
 
-    private void v_displayValues() {
+    private void displayValues() {
         if(toDisplay == null) {
             Intent fromMain = getIntent();
             toDisplay = (Movie)fromMain.getSerializableExtra("movie");
@@ -63,18 +63,17 @@ public class MovieActivity extends AppCompatActivity{
         posterView.setImageResource(toDisplay.getPosterID());
     }
 
-    private void v_setupTabs() {
+    private void setupTabs() {
         TabLayout tabLayout = findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Gallery"));
         tabLayout.addTab(tabLayout.newTab().setText("Actors"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
-
         final ViewPager viewPager = findViewById(R.id.pager);
-        final TabAdapter adapter = new TabAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
+        final TabAdapter adapter = new TabAdapter(getSupportFragmentManager(), tabLayout.getTabCount(),toDisplay.getPhotosIDs(),toDisplay.getMovieActors());
         viewPager.setAdapter(adapter);
-        v_setupActors();
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -82,18 +81,10 @@ public class MovieActivity extends AppCompatActivity{
             }
 
             @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
+            public void onTabUnselected(TabLayout.Tab tab) {}
 
             @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
+            public void onTabReselected(TabLayout.Tab tab) {}
         });
-    }
-
-    private void v_setupActors() {
-
     }
 }

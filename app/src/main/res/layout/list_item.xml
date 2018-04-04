@@ -16,7 +16,7 @@
             android:layout_height="@dimen/delete_icon_size"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="@dimen/default_padding"
+            android:layout_marginEnd="@dimen/button_margin"
             android:contentDescription="@string/delete_description"
             android:src="@drawable/ic_delete" />
 
@@ -28,7 +28,7 @@
             android:layout_toStartOf="@id/delete_icon"
             android:text="@string/delete_movie"
             android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/delete_font" />
+            android:textSize="@dimen/medium_font" />
 
     </RelativeLayout>
 
@@ -36,36 +36,40 @@
         android:id="@+id/view_foreground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorAdditional"
-        android:padding="@dimen/default_padding">
+        android:background="@color/colorAdditional">
 
         <ImageView
             android:id="@+id/list_thumbnail"
             android:layout_width="@dimen/thumbnail_size"
             android:layout_height="@dimen/thumbnail_size"
-            android:layout_marginEnd="@dimen/default_padding"
+            android:layout_marginBottom="@dimen/avatar_margin"
+            android:layout_marginEnd="@dimen/avatar_margin"
+            android:layout_marginStart="@dimen/avatar_margin"
+            android:layout_marginTop="@dimen/avatar_margin"
             android:contentDescription="@string/poster_description"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"/>
 
         <TextView
             android:id="@+id/list_top_text"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/list_element_half_height"
             android:layout_toEndOf="@id/list_thumbnail"
             android:ellipsize="end"
             android:maxLines="1"
             android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/list_font" />
+            android:textSize="@dimen/list_font"
+            android:gravity="center_vertical"/>
 
         <TextView
             android:id="@+id/list_bottom_text"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/list_element_half_height"
             android:layout_below="@id/list_top_text"
             android:layout_toEndOf="@id/list_thumbnail"
             android:maxLines="1"
             android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/list_font" />
+            android:textSize="@dimen/list_font"
+            android:gravity="center_vertical"/>
 
     </RelativeLayout>
 </FrameLayout>
