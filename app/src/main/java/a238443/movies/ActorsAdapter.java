@@ -10,11 +10,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class ActorAdapter extends BaseAdapter {
+public class ActorsAdapter extends BaseAdapter {
     private ArrayList<Actor> database = new ArrayList<>();
     private LayoutInflater customInflater;
 
-    ActorAdapter(Context forAdapter) {
+    ActorsAdapter(Context forAdapter) {
         customInflater = (LayoutInflater)forAdapter.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
