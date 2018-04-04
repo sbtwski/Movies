@@ -5,4 +5,6 @@
     <string name="age_text">Wiek: </string>
     <string name="poster_description">Movie poster</string>
     <string name="avatar_description">Personal avatar</string>
+    <string name="picture_description">Picture from movie</string>
+    <string name="delete_description">Delete icon</string>
 </resources>

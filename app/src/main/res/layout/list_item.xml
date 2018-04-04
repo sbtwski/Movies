@@ -17,6 +17,7 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="@dimen/default_padding"
+            android:contentDescription="@string/delete_description"
             android:src="@drawable/ic_delete" />
 
         <TextView
@@ -43,6 +44,7 @@
             android:layout_width="@dimen/thumbnail_size"
             android:layout_height="@dimen/thumbnail_size"
             android:layout_marginEnd="@dimen/default_padding"
+            android:contentDescription="@string/poster_description"
             android:scaleType="centerCrop" />
 
         <TextView
