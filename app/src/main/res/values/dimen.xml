@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="list_element_height">120dp</dimen>
-    <dimen name="list_element_half_height">60dp</dimen>
+    <dimen name="list_text_height">40dp</dimen>
 
     <dimen name="small_margin">5dp</dimen>
+    <dimen name="medium_margin">20dp</dimen>
     <dimen name="big_margin">50dp</dimen>
-    <dimen name="button_margin">20dp</dimen>
     <dimen name="avatar_margin">8dp</dimen>
+    <dimen name="list_text_margin">15dp</dimen>
 
     <dimen name="default_padding">10dp</dimen>
 
@@ -15,6 +16,7 @@
 
     <dimen name="thumbnail_size">110dp</dimen>
     <dimen name="tab_size">50dp</dimen>
-    <dimen name="photo_size">120dp</dimen>
+    <dimen name="photo_x">180dp</dimen>
+    <dimen name="photo_y">135dp</dimen>
     <dimen name="delete_icon_size">40dp</dimen>
 </resources>

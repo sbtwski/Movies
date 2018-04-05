@@ -1,6 +1,11 @@
 package a238443.movies;
 
 import java.io.Serializable;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 class Actor implements Serializable{
     private String name;
@@ -8,10 +13,10 @@ class Actor implements Serializable{
     private int age;
     private int photoID;
 
-    Actor(String name, String surname, int age, int photoID) {
+    Actor(String name, String surname, String birthDate, int photoID) {
         this.name = name;
         this.surname = surname;
-        this.age = age;
+        ageCount(birthDate);
         this.photoID = photoID;
 
     }
@@ -33,7 +38,6 @@ class Actor implements Serializable{
     }
 
     String getName() {
-
         return name;
     }
 
@@ -47,6 +51,40 @@ class Actor implements Serializable{
 
     void setPhotoID(int photoID) {
         this.photoID = photoID;
+    }
+
+    private void ageCount(String birthDate) {
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
+        Date dt_temp = new Date();
+        boolean correctDate = true;
+        formatter.setLenient(false);
+
+        try {
+            dt_temp = formatter.parse(birthDate);
+        } catch(ParseException e) {
+            correctDate = false;
+        }
+
+        if(correctDate) {
+            Calendar cal_forInput = Calendar.getInstance();
+            Calendar cal_forCurrent = Calendar.getInstance();
+            cal_forInput.setTime(dt_temp);
+            cal_forCurrent.getTime();
+
+            int i_yearDifference = cal_forCurrent.get(Calendar.YEAR) - cal_forInput.get(Calendar.YEAR);
+            int i_monthDifference = cal_forCurrent.get(Calendar.MONTH) - cal_forInput.get(Calendar.MONTH);
+            int i_dayDifference = cal_forCurrent.get(Calendar.DAY_OF_MONTH) - cal_forInput.get(Calendar.DAY_OF_MONTH);
+            age = i_yearDifference;
+
+            if (i_monthDifference < 0)
+                age--;
+            else {
+                if (i_monthDifference == 0) {
+                    if (i_dayDifference < 0)
+                        age--;
+                }
+            }
+        }
     }
 
 }

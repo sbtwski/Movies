@@ -16,7 +16,6 @@ class Movie implements Serializable{
         this.posterID = posterID;
         this.photosIDs = photosIDs;
         this.movieActors = movieActors;
-
     }
 
     String getTitle() {
@@ -35,7 +34,6 @@ class Movie implements Serializable{
         this.category = category;
     }
 
-
     int getPosterID() { return posterID; }
 
     void setPosterID(int posterID) {
@@ -49,7 +47,6 @@ class Movie implements Serializable{
     public void setPhotosIDs(ArrayList<Integer> photosIDs) {
         this.photosIDs = photosIDs;
     }
-
 
     ArrayList<Actor> getMovieActors() {
         return movieActors;

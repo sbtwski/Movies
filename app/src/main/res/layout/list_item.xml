@@ -16,7 +16,7 @@
             android:layout_height="@dimen/delete_icon_size"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_marginEnd="@dimen/medium_margin"
             android:contentDescription="@string/delete_description"
             android:src="@drawable/ic_delete" />
 
@@ -36,7 +36,7 @@
         android:id="@+id/view_foreground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorAdditional">
+        android:background="@color/colorBackground">
 
         <ImageView
             android:id="@+id/list_thumbnail"
@@ -51,25 +51,28 @@
 
         <TextView
             android:id="@+id/list_top_text"
+            android:layout_marginTop="@dimen/list_text_margin"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/list_element_half_height"
-            android:layout_toEndOf="@id/list_thumbnail"
+            android:layout_height="@dimen/list_text_height"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/list_thumbnail"
             android:ellipsize="end"
+            android:gravity="center_vertical"
             android:maxLines="1"
             android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/list_font"
-            android:gravity="center_vertical"/>
+            android:textSize="@dimen/list_font" />
 
         <TextView
             android:id="@+id/list_bottom_text"
+            android:layout_marginBottom="@dimen/list_text_margin"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/list_element_half_height"
-            android:layout_below="@id/list_top_text"
-            android:layout_toEndOf="@id/list_thumbnail"
+            android:layout_height="@dimen/list_text_height"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/list_thumbnail"
+            android:gravity="center_vertical"
             android:maxLines="1"
             android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/list_font"
-            android:gravity="center_vertical"/>
+            android:textSize="@dimen/list_font" />
 
     </RelativeLayout>
 </FrameLayout>
