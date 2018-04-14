@@ -1,14 +1,19 @@
 package a238443.movies;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.support.design.widget.TabLayout;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 public class MovieActivity extends AppCompatActivity{
     TextView titleView, categoryView;
@@ -60,7 +65,7 @@ public class MovieActivity extends AppCompatActivity{
 
         titleView.setText(toDisplay.getTitle());
         categoryView.setText(toDisplay.getCategory());
-        posterView.setImageResource(toDisplay.getPosterID());
+        posterView.setImageDrawable(getPoster(toDisplay.getPosterPath()));
     }
 
     private void setupTabs() {
@@ -70,7 +75,7 @@ public class MovieActivity extends AppCompatActivity{
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = findViewById(R.id.pager);
-        final TabAdapter adapter = new TabAdapter(getSupportFragmentManager(), tabLayout.getTabCount(),toDisplay.getPhotosIDs(),toDisplay.getMovieActors());
+        final TabAdapter adapter = new TabAdapter(getSupportFragmentManager(), tabLayout.getTabCount(),toDisplay.getPhotosPaths(),toDisplay.getMovieActors());
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
 
@@ -86,5 +91,17 @@ public class MovieActivity extends AppCompatActivity{
             @Override
             public void onTabReselected(TabLayout.Tab tab) {}
         });
+    }
+
+    private Drawable getPoster(String posterPath) {
+        Drawable poster = getDrawable(R.drawable.ic_placeholder);
+        try {
+            InputStream input = getAssets().open(posterPath);
+            poster = Drawable.createFromStream(input, null);
+            input.close();
+        } catch (IOException e) {
+            Log.e("poster_error","Poster file not found");
+        }
+        return poster;
     }
 }

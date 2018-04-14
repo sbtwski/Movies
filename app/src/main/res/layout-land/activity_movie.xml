@@ -111,7 +111,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/tab_size"
             android:minHeight="?attr/actionBarSize"
-            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabIndicatorColor="@color/colorAccent"
             app:tabIndicatorHeight="3dp"
             app:tabTextColor="@color/colorPrimaryLight"
             app:tabSelectedTextColor="@color/colorPrimary"/>

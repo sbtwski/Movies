@@ -9,10 +9,10 @@ import java.util.ArrayList;
 
 public class TabAdapter extends FragmentStatePagerAdapter {
     private int numOfTabs;
-    private ArrayList<Integer> forGallery;
+    private ArrayList<String> forGallery;
     private ArrayList<Actor> forList;
 
-    TabAdapter(FragmentManager manager, int numOfTabs, ArrayList<Integer> forGallery, ArrayList<Actor> forList) {
+    TabAdapter(FragmentManager manager, int numOfTabs, ArrayList<String> forGallery, ArrayList<Actor> forList) {
         super(manager);
         this.numOfTabs = numOfTabs;
         this.forGallery = forGallery;
@@ -25,7 +25,7 @@ public class TabAdapter extends FragmentStatePagerAdapter {
             case 0:
                 GalleryFragment gallery = new GalleryFragment();
                 Bundle photoBundle = new Bundle();
-                photoBundle.putIntegerArrayList("photos",forGallery);
+                photoBundle.putSerializable("photos",forGallery);
                 gallery.setArguments(photoBundle);
                 return gallery;
             case 1:

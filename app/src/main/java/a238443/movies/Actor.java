@@ -11,13 +11,13 @@ class Actor implements Serializable{
     private String name;
     private String surname;
     private int age;
-    private int photoID;
+    private String photoPath;
 
-    Actor(String name, String surname, String birthDate, int photoID) {
+    Actor(String name, String surname, String birthDate, String photoPath) {
         this.name = name;
         this.surname = surname;
         ageCount(birthDate);
-        this.photoID = photoID;
+        this.photoPath = photoPath;
 
     }
 
@@ -45,12 +45,12 @@ class Actor implements Serializable{
         this.name = name;
     }
 
-    int getPhotoID() {
-        return photoID;
+    String getPhotoPath() {
+        return photoPath;
     }
 
-    void setPhotoID(int photoID) {
-        this.photoID = photoID;
+    void setPhotoPath(String photoPath) {
+        this.photoPath = photoPath;
     }
 
     private void ageCount(String birthDate) {

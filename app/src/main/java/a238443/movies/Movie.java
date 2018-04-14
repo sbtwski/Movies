@@ -6,15 +6,15 @@ import java.util.ArrayList;
 class Movie implements Serializable{
     private String title;
     private String category;
-    private int posterID;
-    private ArrayList<Integer> photosIDs;
+    private String posterPath;
+    private ArrayList<String> photosPaths;
     private ArrayList<Actor> movieActors;
 
-    Movie(String title, String category, int posterID, ArrayList<Integer> photosIDs, ArrayList<Actor> movieActors) {
+    Movie(String title, String category, String posterPath, ArrayList<String> photosPaths, ArrayList<Actor> movieActors) {
         this.title = title;
         this.category = category;
-        this.posterID = posterID;
-        this.photosIDs = photosIDs;
+        this.posterPath = posterPath;
+        this.photosPaths = photosPaths;
         this.movieActors = movieActors;
     }
 
@@ -34,18 +34,18 @@ class Movie implements Serializable{
         this.category = category;
     }
 
-    int getPosterID() { return posterID; }
+    String getPosterPath() { return posterPath; }
 
-    void setPosterID(int posterID) {
-        this.posterID = posterID;
+    void setPosterPath(String posterPath) {
+        this.posterPath = posterPath;
     }
 
-    ArrayList<Integer> getPhotosIDs() {
-        return photosIDs;
+    ArrayList<String> getPhotosPaths() {
+        return photosPaths;
     }
 
-    public void setPhotosIDs(ArrayList<Integer> photosIDs) {
-        this.photosIDs = photosIDs;
+    public void setPhotosPaths(ArrayList<String> photosPaths) {
+        this.photosPaths = photosPaths;
     }
 
     ArrayList<Actor> getMovieActors() {
@@ -55,4 +55,5 @@ class Movie implements Serializable{
     public void setMovieActors(ArrayList<Actor> movieActors) {
         this.movieActors = movieActors;
     }
+
 }

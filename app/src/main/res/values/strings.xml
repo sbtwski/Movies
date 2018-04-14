@@ -2,9 +2,10 @@
     <string name="app_name">Movies</string>
 
     <string name="delete_movie">DELETE</string>
-    <string name="age_text">Wiek:  </string>
+    <string name="age_text">Age:</string>
     <string name="poster_description">Movie poster</string>
     <string name="avatar_description">Personal avatar</string>
     <string name="picture_description">Picture from movie</string>
+    <string name="preview_description">Film photo preview</string>
     <string name="delete_description">Delete icon</string>
 </resources>

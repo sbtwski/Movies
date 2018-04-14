@@ -1,6 +1,9 @@
 package a238443.movies;
 
+import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,11 +11,14 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MovieHolder> {
     private ArrayList<Movie> database = new ArrayList<>();
     private RecyclerViewClickListener clickListener;
+    private Context appContext;
 
     class MovieHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         private RecyclerViewClickListener holderListener;
@@ -39,9 +45,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MovieH
         }
     }
 
-    RecyclerAdapter(RecyclerViewClickListener listener) {
+    RecyclerAdapter(RecyclerViewClickListener listener, Context forAdapter) {
         clickListener = listener;
         database = new ArrayList<>();
+        appContext = forAdapter;
     }
 
     @Override
@@ -54,7 +61,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MovieH
 
         title.setText(toBind.getTitle());
         category.setText(toBind.getCategory());
-        poster.setImageResource(toBind.getPosterID());
+        poster.setImageDrawable(getPoster(toBind.getPosterPath()));
     }
 
     @Override
@@ -93,5 +100,17 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MovieH
     void removeItem(int position) {
         database.remove(position);
         notifyDataSetChanged();
+    }
+
+    private Drawable getPoster(String posterPath) {
+        Drawable poster = appContext.getDrawable(R.drawable.ic_placeholder);
+        try {
+            InputStream input = appContext.getAssets().open(posterPath);
+            poster = Drawable.createFromStream(input, null);
+            input.close();
+        } catch (IOException e) {
+            Log.e("poster_error_recycler","Poster file not found during recycler building");
+        }
+        return poster;
     }
 }
