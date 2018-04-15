@@ -35,6 +35,7 @@ public class PhotoActivity extends AppCompatActivity{
 
         Intent fromParent = getIntent();
         String pathToPhoto = fromParent.getStringExtra("photoPath");
+        pathToPhoto = pathToPhoto.replace(".jpg","_hres.jpg");
         photoView.setImageDrawable(getPhoto(pathToPhoto));
     }
 
