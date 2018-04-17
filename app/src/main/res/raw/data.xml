@@ -1,125 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed>
     <movie>
-        <title>Interstellar</title>
-        <category>Science Fiction</category>
-        <poster>interstellar/interstellar_poster.jpg</poster>
-
-        <actor>
-            <name>Matthew</name>
-            <surname>McConaughey</surname>
-            <birth>4/11/1969</birth>
-            <photo>interstellar/mcconaughey.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Jessica</name>
-            <surname>Chastain</surname>
-            <birth>24/3/1977</birth>
-            <photo>interstellar/chastain.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Anne</name>
-            <surname>Hathaway</surname>
-            <birth>12/11/1982</birth>
-            <photo>interstellar/hathaway.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>David</name>
-            <surname>Oyelowo</surname>
-            <birth>1/4/1976</birth>
-            <photo>interstellar/oyelowo.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Michael</name>
-            <surname>Caine</surname>
-            <birth>14/3/1933</birth>
-            <photo>interstellar/caine.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Casey</name>
-            <surname>Affleck</surname>
-            <birth>12/8/1975</birth>
-            <photo>interstellar/affleck.jpg</photo>
-        </actor>
-
-        <photo>interstellar/interstellar_photo_1.jpg</photo>
-        <photo>interstellar/interstellar_photo_2.jpg</photo>
-        <photo>interstellar/interstellar_photo_3.jpg</photo>
-        <photo>interstellar/interstellar_photo_4.jpg</photo>
-        <photo>interstellar/interstellar_photo_5.jpg</photo>
-        <photo>interstellar/interstellar_photo_6.jpg</photo>
-        <photo>interstellar/interstellar_photo_7.jpg</photo>
-        <photo>interstellar/interstellar_photo_8.jpg</photo>
-        <photo>interstellar/interstellar_photo_9.jpg</photo>
-    </movie>
-
-    <movie>
-        <title>Blade Runner 2049</title>
-        <category>Science Fiction</category>
-        <poster>bladerunner/bladerunner_poster.jpg</poster>
-
-        <actor>
-            <name>Ryan</name>
-            <surname>Gosling</surname>
-            <birth>12/11/1980</birth>
-            <photo>bladerunner/gosling.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Ana</name>
-            <surname>De Armas</surname>
-            <birth>30/4/1988</birth>
-            <photo>bladerunner/dearmas.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Robin</name>
-            <surname>Wright</surname>
-            <birth>8/4/1966</birth>
-            <photo>bladerunner/wright.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Jared</name>
-            <surname>Leto</surname>
-            <birth>26/12/1971</birth>
-            <photo>bladerunner/leto.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Harrison</name>
-            <surname>Ford</surname>
-            <birth>13/7/1942</birth>
-            <photo>bladerunner/ford.jpg</photo>
-        </actor>
-
-        <photo>bladerunner/bladerunner_photo_1.jpg</photo>
-        <photo>bladerunner/bladerunner_photo_2.jpg</photo>
-        <photo>bladerunner/bladerunner_photo_3.jpg</photo>
-        <photo>bladerunner/bladerunner_photo_4.jpg</photo>
-        <photo>bladerunner/bladerunner_photo_5.jpg</photo>
-        <photo>bladerunner/bladerunner_photo_6.jpg</photo>
-        <photo>bladerunner/bladerunner_photo_7.jpg</photo>
-        <photo>bladerunner/bladerunner_photo_8.jpg</photo>
-        <photo>bladerunner/bladerunner_photo_9.jpg</photo>
-        <photo>bladerunner/bladerunner_photo_10.jpg</photo>
-    </movie>
-
-    <movie>
         <title>Annihilation</title>
         <category>Thriller</category>
         <poster>annihilation/annihilation_poster.jpg</poster>
 
         <actor>
-            <name>Natalie</name>
-            <surname>Portman</surname>
-            <birth>9/6/1981</birth>
-            <photo>annihilation/portman.jpg</photo>
+            <name>Oscar</name>
+            <surname>Isaac</surname>
+            <birth>9/3/1979</birth>
+            <photo>annihilation/isaac.jpg</photo>
         </actor>
 
         <actor>
@@ -127,6 +17,20 @@
             <surname>Jason Leigh</surname>
             <birth>5/2/1962</birth>
             <photo>annihilation/leigh.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Tuva</name>
+            <surname>Novotny</surname>
+            <birth>21/12/1979</birth>
+            <photo>annihilation/novotny.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Natalie</name>
+            <surname>Portman</surname>
+            <birth>9/6/1981</birth>
+            <photo>annihilation/portman.jpg</photo>
         </actor>
 
         <actor>
@@ -144,24 +48,10 @@
         </actor>
 
         <actor>
-            <name>Tuva</name>
-            <surname>Novotny</surname>
-            <birth>21/12/1979</birth>
-            <photo>annihilation/novotny.jpg</photo>
-        </actor>
-
-        <actor>
             <name>Benedict</name>
             <surname>Wong</surname>
             <birth>3/6/1971</birth>
             <photo>annihilation/wong.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Oscar</name>
-            <surname>Isaac</surname>
-            <birth>9/3/1979</birth>
-            <photo>annihilation/isaac.jpg</photo>
         </actor>
 
         <photo>annihilation/annihilation_photo_1.jpg</photo>
@@ -175,15 +65,224 @@
     </movie>
 
     <movie>
+        <title>Blade Runner 2049</title>
+        <category>Science Fiction</category>
+        <poster>bladerunner/bladerunner_poster.jpg</poster>
+
+        <actor>
+            <name>Ana</name>
+            <surname>De Armas</surname>
+            <birth>30/4/1988</birth>
+            <photo>bladerunner/dearmas.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Harrison</name>
+            <surname>Ford</surname>
+            <birth>13/7/1942</birth>
+            <photo>bladerunner/ford.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Ryan</name>
+            <surname>Gosling</surname>
+            <birth>12/11/1980</birth>
+            <photo>bladerunner/gosling.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Jared</name>
+            <surname>Leto</surname>
+            <birth>26/12/1971</birth>
+            <photo>bladerunner/leto.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Robin</name>
+            <surname>Wright</surname>
+            <birth>8/4/1966</birth>
+            <photo>bladerunner/wright.jpg</photo>
+        </actor>
+
+        <photo>bladerunner/bladerunner_photo_1.jpg</photo>
+        <photo>bladerunner/bladerunner_photo_2.jpg</photo>
+        <photo>bladerunner/bladerunner_photo_3.jpg</photo>
+        <photo>bladerunner/bladerunner_photo_4.jpg</photo>
+        <photo>bladerunner/bladerunner_photo_5.jpg</photo>
+        <photo>bladerunner/bladerunner_photo_6.jpg</photo>
+        <photo>bladerunner/bladerunner_photo_7.jpg</photo>
+        <photo>bladerunner/bladerunner_photo_8.jpg</photo>
+        <photo>bladerunner/bladerunner_photo_9.jpg</photo>
+        <photo>bladerunner/bladerunner_photo_10.jpg</photo>
+    </movie>
+
+    <movie>
+        <title>Ex Machina</title>
+        <category>Science Fiction</category>
+        <poster>exmachina/exmachina_poster.jpg</poster>
+
+        <actor>
+            <name>Domhnall</name>
+            <surname>Gleeson</surname>
+            <birth>12/5/1983</birth>
+            <photo>exmachina/gleeson.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Oscar</name>
+            <surname>Isaac</surname>
+            <birth>9/3/1979</birth>
+            <photo>exmachina/isaac_ex.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Sonoya</name>
+            <surname>Mizuno</surname>
+            <birth>1/7/1988</birth>
+            <photo>exmachina/mizuno.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Alicia</name>
+            <surname>Vikander</surname>
+            <birth>3/10/1988</birth>
+            <photo>exmachina/vikander.jpg</photo>
+        </actor>
+
+        <photo>exmachina/exmachina_photo_1.jpg</photo>
+        <photo>exmachina/exmachina_photo_2.jpg</photo>
+        <photo>exmachina/exmachina_photo_3.jpg</photo>
+        <photo>exmachina/exmachina_photo_4.jpg</photo>
+        <photo>exmachina/exmachina_photo_5.jpg</photo>
+        <photo>exmachina/exmachina_photo_6.jpg</photo>
+        <photo>exmachina/exmachina_photo_7.jpg</photo>
+
+    </movie>
+
+    <movie>
+        <title>Interstellar</title>
+        <category>Science Fiction</category>
+        <poster>interstellar/interstellar_poster.jpg</poster>
+
+        <actor>
+            <name>Casey</name>
+            <surname>Affleck</surname>
+            <birth>12/8/1975</birth>
+            <photo>interstellar/affleck.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Michael</name>
+            <surname>Caine</surname>
+            <birth>14/3/1933</birth>
+            <photo>interstellar/caine.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Jessica</name>
+            <surname>Chastain</surname>
+            <birth>24/3/1977</birth>
+            <photo>interstellar/chastain.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Anne</name>
+            <surname>Hathaway</surname>
+            <birth>12/11/1982</birth>
+            <photo>interstellar/hathaway.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Matthew</name>
+            <surname>McConaughey</surname>
+            <birth>4/11/1969</birth>
+            <photo>interstellar/mcconaughey.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>David</name>
+            <surname>Oyelowo</surname>
+            <birth>1/4/1976</birth>
+            <photo>interstellar/oyelowo.jpg</photo>
+        </actor>
+
+        <photo>interstellar/interstellar_photo_1.jpg</photo>
+        <photo>interstellar/interstellar_photo_2.jpg</photo>
+        <photo>interstellar/interstellar_photo_3.jpg</photo>
+        <photo>interstellar/interstellar_photo_4.jpg</photo>
+        <photo>interstellar/interstellar_photo_5.jpg</photo>
+        <photo>interstellar/interstellar_photo_6.jpg</photo>
+        <photo>interstellar/interstellar_photo_7.jpg</photo>
+        <photo>interstellar/interstellar_photo_8.jpg</photo>
+        <photo>interstellar/interstellar_photo_9.jpg</photo>
+    </movie>
+
+    <movie>
+        <title>Life</title>
+        <category>Horror</category>
+        <poster>life/life_poster.jpg</poster>
+
+        <actor>
+            <name>Ariyon</name>
+            <surname>Bakare</surname>
+            <birth>1/7/1971</birth>
+            <photo>life/bakare.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Olga</name>
+            <surname>Dykhovichnaya</surname>
+            <birth>4/9/1980</birth>
+            <photo>life/dykhovichnaya.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Rebecca</name>
+            <surname>Ferguson</surname>
+            <birth>19/10/1983</birth>
+            <photo>life/ferguson.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Jake</name>
+            <surname>Gyllenhaal</surname>
+            <birth>19/12/1980</birth>
+            <photo>life/gyllenhaal.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Ryan</name>
+            <surname>Reynolds</surname>
+            <birth>23/10/1976</birth>
+            <photo>life/reynolds.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Hiroyuki</name>
+            <surname>Sanada</surname>
+            <birth>12/10/1960</birth>
+            <photo>life/sanada.jpg</photo>
+        </actor>
+
+        <photo>life/life_photo_1.jpg</photo>
+        <photo>life/life_photo_2.jpg</photo>
+        <photo>life/life_photo_3.jpg</photo>
+        <photo>life/life_photo_4.jpg</photo>
+        <photo>life/life_photo_5.jpg</photo>
+        <photo>life/life_photo_6.jpg</photo>
+
+    </movie>
+
+    <movie>
         <title>Spotlight</title>
         <category>Drama</category>
         <poster>spotlight/spotlight_poster.jpg</poster>
 
         <actor>
-            <name>Mark</name>
-            <surname>Ruffalo</surname>
-            <birth>22/11/1967</birth>
-            <photo>spotlight/ruffalo.jpg</photo>
+            <name>Brian</name>
+            <surname>d'Arcy James</surname>
+            <birth>29/6/1968</birth>
+            <photo>spotlight/darcy.jpg</photo>
         </actor>
 
         <actor>
@@ -201,17 +300,10 @@
         </actor>
 
         <actor>
-            <name>Brian</name>
-            <surname>d'Arcy James</surname>
-            <birth>29/6/1968</birth>
-            <photo>spotlight/darcy.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Stanley</name>
-            <surname>Tucci</surname>
-            <birth>11/11/1960</birth>
-            <photo>spotlight/tucci.jpg</photo>
+            <name>Mark</name>
+            <surname>Ruffalo</surname>
+            <birth>22/11/1967</birth>
+            <photo>spotlight/ruffalo.jpg</photo>
         </actor>
 
         <actor>
@@ -219,6 +311,13 @@
             <surname>Slattery</surname>
             <birth>13/8/1962</birth>
             <photo>spotlight/slattery.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Stanley</name>
+            <surname>Tucci</surname>
+            <birth>11/11/1960</birth>
+            <photo>spotlight/tucci.jpg</photo>
         </actor>
 
         <photo>spotlight/spotlight_photo_1.jpg</photo>
@@ -232,28 +331,14 @@
 
     <movie>
         <title>Wind River</title>
-        <category>Crime</category>
+        <category>Criminal</category>
         <poster>windriver/windriver_poster.jpg</poster>
 
         <actor>
-            <name>Jeremy</name>
-            <surname>Renner</surname>
-            <birth>7/1/1971</birth>
-            <photo>windriver/renner.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Elizabeth</name>
-            <surname>Olsen</surname>
-            <birth>16/2/1989</birth>
-            <photo>windriver/olsen.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Graham</name>
-            <surname>Greene</surname>
-            <birth>22/6/1952</birth>
-            <photo>windriver/greene.jpg</photo>
+            <name>Kelsey</name>
+            <surname>Asbille</surname>
+            <birth>9/9/1991</birth>
+            <photo>windriver/asbille.jpg</photo>
         </actor>
 
         <actor>
@@ -264,10 +349,24 @@
         </actor>
 
         <actor>
-            <name>Kelsey</name>
-            <surname>Asbille</surname>
-            <birth>9/9/1991</birth>
-            <photo>windriver/asbille.jpg</photo>
+            <name>Graham</name>
+            <surname>Greene</surname>
+            <birth>22/6/1952</birth>
+            <photo>windriver/greene.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Elizabeth</name>
+            <surname>Olsen</surname>
+            <birth>16/2/1989</birth>
+            <photo>windriver/olsen.jpg</photo>
+        </actor>
+
+        <actor>
+            <name>Jeremy</name>
+            <surname>Renner</surname>
+            <birth>7/1/1971</birth>
+            <photo>windriver/renner.jpg</photo>
         </actor>
 
         <photo>windriver/windriver_photo_1.jpg</photo>
@@ -278,103 +377,6 @@
 
     </movie>
 
-    <movie>
-        <title>Ex Machina</title>
-        <category>Science Fiction</category>
-        <poster>exmachina/exmachina_poster.jpg</poster>
 
-        <actor>
-            <name>Domhnall</name>
-            <surname>Gleeson</surname>
-            <birth>12/5/1983</birth>
-            <photo>exmachina/gleeson.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Alicia</name>
-            <surname>Vikander</surname>
-            <birth>3/10/1988</birth>
-            <photo>exmachina/vikander.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Oscar</name>
-            <surname>Isaac</surname>
-            <birth>9/3/1979</birth>
-            <photo>exmachina/isaac_ex.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Sonoya</name>
-            <surname>Mizuno</surname>
-            <birth>1/7/1988</birth>
-            <photo>exmachina/mizuno.jpg</photo>
-        </actor>
-
-        <photo>exmachina/exmachina_photo_1.jpg</photo>
-        <photo>exmachina/exmachina_photo_2.jpg</photo>
-        <photo>exmachina/exmachina_photo_3.jpg</photo>
-        <photo>exmachina/exmachina_photo_4.jpg</photo>
-        <photo>exmachina/exmachina_photo_5.jpg</photo>
-        <photo>exmachina/exmachina_photo_6.jpg</photo>
-        <photo>exmachina/exmachina_photo_7.jpg</photo>
-
-    </movie>
-
-    <movie>
-        <title>Life</title>
-        <category>Horror</category>
-        <poster>life/life_poster.jpg</poster>
-
-        <actor>
-            <name>Jake</name>
-            <surname>Gyllenhaal</surname>
-            <birth>19/12/1980</birth>
-            <photo>life/gyllenhaal.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Ryan</name>
-            <surname>Reynolds</surname>
-            <birth>23/10/1976</birth>
-            <photo>life/reynolds.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Rebecca</name>
-            <surname>Ferguson</surname>
-            <birth>19/10/1983</birth>
-            <photo>life/ferguson.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Ariyon</name>
-            <surname>Bakare</surname>
-            <birth>1/7/1971</birth>
-            <photo>life/bakare.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Hiroyuki</name>
-            <surname>Sanada</surname>
-            <birth>12/10/1960</birth>
-            <photo>life/sanada.jpg</photo>
-        </actor>
-
-        <actor>
-            <name>Olga</name>
-            <surname>Dykhovichnaya</surname>
-            <birth>4/9/1980</birth>
-            <photo>life/dykhovichnaya.jpg</photo>
-        </actor>
-
-        <photo>life/life_photo_1.jpg</photo>
-        <photo>life/life_photo_2.jpg</photo>
-        <photo>life/life_photo_3.jpg</photo>
-        <photo>life/life_photo_4.jpg</photo>
-        <photo>life/life_photo_5.jpg</photo>
-        <photo>life/life_photo_6.jpg</photo>
-
-    </movie>
 </feed>
 

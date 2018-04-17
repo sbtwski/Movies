@@ -33,8 +33,7 @@ public class GalleryFragment extends Fragment {
         grid = getActivity().findViewById(R.id.gallery_grid);
         grid.setAdapter(adapter);
 
-        for(int i=0;i<moviePhotos.size();i++)
-            adapter.addItem(moviePhotos.get(i));
+        adapter.addDatabase(moviePhotos);
 
         grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

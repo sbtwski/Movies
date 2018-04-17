@@ -1,7 +1,11 @@
 package a238443.movies;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -102,15 +106,18 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MovieH
         notifyDataSetChanged();
     }
 
-    private Drawable getPoster(String posterPath) {
-        Drawable poster = appContext.getDrawable(R.drawable.ic_placeholder);
+    private RoundedBitmapDrawable getPoster(String posterPath) {
+        Bitmap bitmapPoster = BitmapFactory.decodeResource(appContext.getResources(), R.drawable.ic_placeholder);
+        RoundedBitmapDrawable roundedPoster = RoundedBitmapDrawableFactory.create(appContext.getResources(), bitmapPoster);
         try {
+            posterPath = posterPath.replace(".jpg","_lres.jpg");
             InputStream input = appContext.getAssets().open(posterPath);
-            poster = Drawable.createFromStream(input, null);
+            roundedPoster = RoundedBitmapDrawableFactory.create(appContext.getResources(), input);
             input.close();
         } catch (IOException e) {
             Log.e("poster_error_recycler","Poster file not found during recycler building");
         }
-        return poster;
+        roundedPoster.setCircular(true);
+        return roundedPoster;
     }
 }

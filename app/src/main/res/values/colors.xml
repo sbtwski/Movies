@@ -3,6 +3,12 @@
     <color name="colorPrimary">#2e4550</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#de8a0d</color>
-    <color name="colorBackground">#fafafa</color>
     <color name="colorPrimaryLight">#b52e4550</color>
+
+    <color name="colorBackground">#fafafa</color>
+    <color name="colorDrama">#c8786b4e</color>
+    <color name="colorThriller">#c8000000</color>
+    <color name="colorHorror">#c8810303</color>
+    <color name="colorSciFi">#c8021740</color>
+    <color name="colorCriminal">#c8c16b10</color>
 </resources>

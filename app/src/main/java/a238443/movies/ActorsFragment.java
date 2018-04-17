@@ -30,7 +30,6 @@ public class ActorsFragment extends Fragment {
         list = getActivity().findViewById(R.id.main_list_view);
         list.setAdapter(adapter);
 
-        for(int i=0;i<movieActors.size();i++)
-            adapter.addItem(movieActors.get(i));
+        adapter.addDatabase(movieActors);
     }
 }

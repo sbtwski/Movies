@@ -1,8 +1,10 @@
 package a238443.movies;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -42,6 +44,7 @@ public class MovieActivity extends AppCompatActivity{
 
         displayValues();
         setupTabs();
+        setupBackground();
     }
 
     @Override
@@ -103,5 +106,33 @@ public class MovieActivity extends AppCompatActivity{
             Log.e("poster_error","Poster file not found");
         }
         return poster;
+    }
+
+    private void setupBackground() {
+        String category = toDisplay.getCategory();
+        ConstraintLayout movieLayout = findViewById(R.id.movie_layout);
+
+        switch(category) {
+            case "Science Fiction": movieLayout.setBackgroundColor(getColor(R.color.colorSciFi)); setDescriptionColor(true); break;
+            case "Drama": movieLayout.setBackgroundColor(getColor(R.color.colorDrama)); setDescriptionColor(false); break;
+            case "Horror": movieLayout.setBackgroundColor(getColor(R.color.colorHorror)); setDescriptionColor(false); break;
+            case "Criminal": movieLayout.setBackgroundColor(getColor(R.color.colorCriminal)); setDescriptionColor(false); break;
+            case "Thriller": movieLayout.setBackgroundColor(getColor(R.color.colorThriller)); setDescriptionColor(true); break;
+            default: movieLayout.setBackgroundColor(getColor(R.color.colorBackground)); setDescriptionColor(false);
+        }
+    }
+
+    private void setDescriptionColor(boolean darkBackground) {
+        TextView title = findViewById(R.id.title_view);
+        TextView category = findViewById(R.id.category_view);
+
+        if(darkBackground) {
+            title.setTextColor(getColor(R.color.colorAccent));
+            category.setTextColor(getColor(R.color.colorAccent));
+        }
+        else {
+            title.setTextColor(getColor(R.color.colorPrimary));
+            category.setTextColor(getColor(R.color.colorPrimary));
+        }
     }
 }

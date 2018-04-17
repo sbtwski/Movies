@@ -46,8 +46,9 @@
             android:layout_marginEnd="@dimen/avatar_margin"
             android:layout_marginStart="@dimen/avatar_margin"
             android:layout_marginTop="@dimen/avatar_margin"
+            android:adjustViewBounds="false"
             android:contentDescription="@string/poster_description"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop" />
 
         <TextView
             android:id="@+id/list_top_text"

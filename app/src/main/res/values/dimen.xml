@@ -13,8 +13,9 @@
 
     <dimen name="medium_font">20sp</dimen>
     <dimen name="list_font">23sp</dimen>
+    <dimen name="description_font">25sp</dimen>
 
-    <dimen name="thumbnail_size">110dp</dimen>
+    <dimen name="thumbnail_size">102dp</dimen>
     <dimen name="tab_size">50dp</dimen>
     <dimen name="photo_x">180dp</dimen>
     <dimen name="photo_y">135dp</dimen>
